@@ -1,0 +1,140 @@
+section#topbar {
+    height: 40px;
+}
+
+section#topbar > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+section#topbar.sticky nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+}
+
+/*------------------------------------------*/
+section#siteBanners {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+section#siteBanners ol {
+
+}
+
+section#siteBanners ol li {
+    position: relative;
+    border: 1px solid red;
+}
+
+section#siteBanners > ol li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section#siteBanners > ol li img {
+    vertical-align: top;
+}
+
+/*---------------------------------------------*/
+section#siteIntroduce {
+    margin: 20px 0;
+}
+
+section#siteIntroduce > ul > li {
+    display: flex;
+    margin: 20px 0;
+}
+
+section#siteIntroduce > ul > li p {
+    border: 1px solid red;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+section#siteIntroduce > ul > li:nth-child(odd) > .imgWp {
+    order: 2;
+}
+
+section#siteIntroduce > ul > li:nth-child(odd) > p {
+    order: 1;
+}
+
+section#siteIntroduce > ul > li img {
+    vertical-align: top;
+}
+
+@media (max-width: 414px) {
+    /*section#siteIntroduce > ul > li img{*/
+    /*max-width: 200px;*/
+    /*}*/
+}
+
+/*---------------------------------------------*/
+section#siteProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#siteProducts .inner h2 {
+    text-align: center;
+}
+
+section#siteProducts ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 456px;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------*/
+section#siteAlbum {
+    background: #dddddd;
+    padding: 20px 0;
+}
+
+section#siteAlbum h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+section#siteAlbum > .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------*/
+footer {
+    background: #666;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#goToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    outline: none;
+    z-index: 1;
+}
